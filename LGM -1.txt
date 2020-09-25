@@ -1,0 +1,53 @@
+Actividad 1
+
+Crea un documento XML bien formado que nos permita organizar la información de las actividades que se van a realizar en la residencia "Sanabria" ubicada en Almería. Se desea guardar también los dos principales correos electrónicos de la residencia; el correo de dirección (direccion@sanabria.es) y el correo de uso general (general@sanabria.es). Guarda el documento con el nombre actividad1.xml.
+
+    Disponemos de diferentes tipos de actividades y tenemos que almacenar el nombre y el código. El árbol de categorías es el siguiente:
+        Terapéuticas (TER):
+            Logopedia (LOG), rehabilitación (REH) y hidroterapia (HID).
+        Lúdicas (LUD):
+            Pintura (PIN), papiroflexia (PAP) y taichí (TAI).
+    Los datos que se recogen de cada actividad son los siguientes:
+        Nombre.
+        Código. Con patrón XXX_ZZZ, donde XXX es el código de la subcategoría y ZZZ las tres primeras letras del nombre de la actividad.
+        Duración en días.
+        Número de participantes.
+        Descripción.
+        Precio.
+        Valoración (de 1 a 5).
+    Para la definición del documento XML se ha de tener en cuenta:
+        Se han de incluir, al menos, 2 actividades en subcategorías diferentes de ambas categorías. Como mínimo deben incluirse 4 actividades diferentes.
+        Hay que incluir atributos siempre que sea posible.
+        La anidación del documento XML debe realizarse de forma que no se duplique información, para una fácil incorporación de nuevas actividades a cada categoría y subcategoría.
+        Recordad que cada ítem se incluye en un elemento diferente y que el contenido del elemento incluirá el dato exclusivamente (sin artículos, preposiciones, conjunciones,...).
+        Usar nombres de elementos que identifiquen claramente su contenido (no usar elementos genéricos, por ejemplo: <dato>, <informacion>,...) y que sean concisos. 
+
+Actividad 2
+
+Crea un documento XML bien formado para corregir los errores del siguiente documento XML. Guarda el documento con el nombre actividad2.xml
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<trabajadores>
+  <trabajador>
+    <puesto Recepción />
+    <nombre>Jesús Pérez</nombre>
+  <trabajador>
+    <puesto Enfermería >
+    <nombre>Marta Soriano</nombre>
+  <trabajador>
+</trabajadores>
+
+Actividad 3
+
+Crea un documento XML bien formado para corregir los errores del siguiente documento XML. Guarda el documento con el nombre actividad3.xml
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<medicacion>
+ <medicina nombre="Aspirina" uso="dolor cabeza" uso="circulación" />
+ <medicina nombre="Flutox" uso="antitusivo" />
+ <medicina nombre="Sumial" uso=taquicardias>
+</medicacion> 
+
