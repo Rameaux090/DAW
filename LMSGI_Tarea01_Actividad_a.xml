@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<residencia nombre = "Sanabria" Direccion="direccion@sanabria.es" general="general@sanabria.es">
+	<Actividades>
+		<Terapeuticas codigo="TER">
+				<Logopedia codigo="LOG">
+					<nombre>Alberto</nombre>
+					<codigo>LOG_TER</codigo>
+					<dias>21</dias>
+					<num_participantes>6</num_participantes>
+					<descripcion>Actividad sobre logopedia</descripcion>
+					<precio moneda="€">10</precio>
+					<valoracion>2</valoracion>
+				</Logopedia>
+				
+				<rehabilitacion codigo="REH">
+					<nombre>Manuel</nombre>
+					<codigo>REH_TER</codigo>
+					<dias>15</dias>
+					<num_participantes>19</num_participantes>
+					<descripcion>Actividades mixtas de rehabilitacion para el usuario.</descripcion>
+					<precio moneda="€">20</precio>
+					<valoracion>3</valoracion>
+				</rehabilitacion>
+				
+				<hidroterapia codigo="HID">
+					<nombre>Rocky</nombre>
+					<codigo>HID_TER</codigo>
+					<dias>13</dias>
+					<num_participantes>11</num_participantes>
+					<descripcion> Sesiones de hidroterapia de 9:00 a 12:00</descripcion>
+					<precio moneda="€">13</precio>
+					<valoracion>5</valoracion>
+				</hidroterapia>
+		</Terapeuticas>		
+		
+		<Ludicas codigo="LUD">
+				<pintura codigo="PIN">
+					<nombre>Rafael</nombre>
+					<codigo>PIN_LUD</codigo>
+					<dias>11</dias>
+					<num_participantes>16</num_participantes>
+					<descripcion>Servicios de pintura psicológica.</descripcion>
+					<precio moneda="€">25</precio>
+					<valoracion>3</valoracion>
+				</pintura>
+				
+				<papiroflexia codigo="PAP">
+					<nombre>William</nombre>
+					<codigo>PAP_LUD</codigo>
+					<dias>14</dias>
+					<num_participantes>22</num_participantes>
+					<descripcion> Ejercicios de papiroflexia</descripcion>
+					<precio moneda="€">18</precio>
+					<valoracion>4</valoracion>
+				</papiroflexia>
+				
+				<taichi codigo="TAI">
+					<nombre>Carlos</nombre>
+					<codigo>TAI_LUD</codigo>
+					<dias>30</dias>
+					<num_participantes>30</num_participantes>
+					<descripcion>Practicas aleatorias de Taichi.</descripcion>
+					<precio moneda="€">16</precio>
+					<valoracion>5</valoracion>
+				</taichi>
+		</Ludicas>
+		
+	</Actividades>
+
+</residencia>
