@@ -1,0 +1,50 @@
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
+
+
+public class Ejercicio04 {
+
+    public static void main(String[] args) {
+       String[] arrayPersonas = {"Juan", "Luisa", "Clara", "Rogelio", "Francisco"};
+       
+        Map<LocalDate, LinkedList> mapTurnosPorFecha = new HashMap<>();
+        LocalDate fechas;        
+        DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+          LinkedList listado = new LinkedList();
+        for(int i= 1; i<=7;i++) {
+         fechas =LocalDate.of(2021, Month.MARCH, i);          
+         
+           mapTurnosPorFecha.put(fechas,new LinkedList());          
+           
+        }
+        Set<LocalDate> keys = mapTurnosPorFecha.keySet();
+          int indicePersonas=0;
+        
+           for(LocalDate claves:keys) {       
+                      for(int i =0;i<3;i++) {    
+                             indicePersonas = (indicePersonas+i)%arrayPersonas.length;               
+                    
+                                listado.add(arrayPersonas[indicePersonas]); 
+                            
+                          
+                          
+                            
+                        } 
+                      
+                     mapTurnosPorFecha.put(claves,listado = new LinkedList());
+       
+                    
+                     
+                }            
+         
+        
+        System.out.println(mapTurnosPorFecha);
+        
+    }
+
+}
